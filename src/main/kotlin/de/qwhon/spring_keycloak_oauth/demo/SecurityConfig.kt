@@ -34,11 +34,6 @@ class SecurityConfig {
             .authorizeHttpRequests {
                 it.requestMatchers("/").permitAll() // Allows public access to the root URL
                 it.requestMatchers("/menu").authenticated() // Requires authentication to access "/menu"
-                // TODO: add config for
-                /*
-                .requestMatchers("/").permitAll() // Allows public access to the root URL
-                        .requestMatchers("/menu").authenticated() // Requires authentication to access "/menu"
-                 */
                 it.anyRequest().authenticated()
             }
             .oauth2Login(Customizer { oauth2: OAuth2LoginConfigurer<HttpSecurity?>? ->

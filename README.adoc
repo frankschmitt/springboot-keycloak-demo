@@ -10,11 +10,11 @@ following a https://dev.to/bansikah/keycloak-and-spring-boot-the-ultimate-guide-
 == Running
 * start KeyCloak
   podman-compose up -d
+* launch the app
+  ./gradlew bootRun
+* open the root page
+  open http://localhost:8082 (use frank/frank for auth for menu page)
+
 
 == Poking around
 * http://localhost:8088[KeyCloak Web UI] (use admin/admin for auth)
-
-
-== Credentials
-* User: frank/frank
-* KeyCloak secret: wpVD8Ix5PJK61mtNhzxaVeNW1hZiVyTP
