@@ -2,6 +2,10 @@
 Simple demo application for Spring Boot + OAuth2 (with Keycloak)
 following a https://dev.to/bansikah/keycloak-and-spring-boot-the-ultimate-guide-to-implementing-single-sign-on-1af7[Dev.to article about Keycloak + Spring Boot]
 
+== License
+Apache 2.0 (see LICENSE)
+
+
 == Requirements
 * JDK 17
 * Docker (or Podman) for running the KeyCloak service
