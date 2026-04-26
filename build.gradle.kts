@@ -19,10 +19,17 @@ repositories {
 }
 
 dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-security")
-	implementation("org.springframework.boot:spring-boot-starter-security-oauth2-client")
-	implementation("org.springframework.boot:spring-boot-starter-security-oauth2-resource-server")
+	//implementation("org.springframework.boot:spring-boot-starter-security-oauth2-client")
+	implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
+	//implementation("org.springframework.boot:spring-boot-starter-security-oauth2-resource-server")
+	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
+
+	implementation("org.springframework.boot:spring-boot-starter-test")
+
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+	//implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity3")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
 	testImplementation("org.springframework.boot:spring-boot-starter-security-oauth2-client-test")
@@ -31,6 +38,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-thymeleaf-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
 }
 
 kotlin {
