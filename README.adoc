@@ -1,0 +1,20 @@
+== Synopsis
+Simple demo application for Spring Boot + OAuth2 (with Keycloak)
+following a https://dev.to/bansikah/keycloak-and-spring-boot-the-ultimate-guide-to-implementing-single-sign-on-1af7[Dev.to article about Keycloak + Spring Boot]
+
+== Requirements
+* JDK 17
+* Docker (or Podman) for running the KeyCloak service
+* gradle
+
+== Running
+* start KeyCloak
+  podman-compose up -d
+
+== Poking around
+* http://localhost:8088[KeyCloak Web UI] (use admin/admin for auth)
+
+
+== Credentials
+* User: frank/frank
+* KeyCloak secret: wpVD8Ix5PJK61mtNhzxaVeNW1hZiVyTP
